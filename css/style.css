@@ -1,0 +1,243 @@
+   /* المتغيرات */
+
+    /* الاساسيات  */
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Reem Kufi', sans-serif;
+        direction: rtl;
+    }
+    .container {
+        padding: 0 5px;
+        margin: 0 auto;
+
+    }
+  /* Small */
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+  /* Medium */
+    @media (min-width: 992px) {
+        .container {
+          width: 970px;
+        }
+    }
+    /* Large */
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
+
+    .special-header{
+        text-align: center;
+        margin: 150px 0 75px;
+    }
+    .special-header h2{
+        font-size: 30px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    .special-header p{
+        margin: 0;
+    }
+
+    /* نهاية الاساسيات */
+
+
+    /* بداية الهيدر */
+    header{
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 100%;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+    }
+    header .header-con{
+        padding: 20px 0 ;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+
+    }  
+    header .logo p{
+        padding: 0;
+        margin: 0;
+        letter-spacing: 15px;
+        font-weight: 500;
+        font-weight: 500;
+    }  
+    header nav a{
+        text-decoration: none;
+        color: black;
+        padding-left: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        transition: 0.3s;
+        position: relative;
+    }
+    header nav a:hover{
+        top: 3px;
+    }
+    @media (max-width: 767px){
+        nav{
+            display: none;
+        }
+        .logo{
+            margin: 0 auto;
+        }
+    }
+    /* نهاية الهيدر */
+
+
+    /* الصورة الي فالبداية */
+
+    .mine-img {
+        background-image: url(../img/pexels-expect-best-323780.jpg);
+        background-size: cover;
+        height: calc(100vh - 64px);
+        padding-top: 0;
+        margin-top: 0;
+        position: relative;
+
+    }
+    .mine-img h2{
+        margin: 0;
+        position: absolute; 
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);   
+        color: white ;
+        background-color: rgba(0, 0, 0, 0.692);
+        font-size: 65px;
+        padding: 13px 65px;
+    }
+    @media (max-width: 767px){
+        .mine-img h2{
+            font-size: 20px;
+            padding: 13px 40px;
+        }
+        .mine-img{
+            height: calc(100vh - 200px);
+        }
+    }
+
+
+    /* سكشن البروجت */
+
+    .project .project-con{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .project .project-con .project-card{
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+    .project .project-con .project-card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .project .project-con .project-card img{
+        width: 100%;
+    }
+
+    .project .project-con .project-card p{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        margin: 0;
+    }
+
+
+/* بداية قسم الاباوت */
+
+
+    .about .about-con{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .about .about-con .about-card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+    }
+    .about .about-con .about-card:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .about .about-con .about-card .about-card-con{
+        padding: 2px 16px 30px ;
+
+    }
+
+    .about .about-con .about-card img{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .about .about-con .about-card p:first-of-type{
+        color: #777;
+        font-size: 12px;
+    }
+
+
+
+    /* تواصل معنا */
+    .contact .container  .special-header{
+        margin-bottom: 0;
+    }
+
+    .contact-con{
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 40px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        padding: 30px 0;
+        margin-top: 0;
+    }
+    .contact-con:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+
+    .contact-con i{
+        padding: 0 20px;
+        position: relative;
+    }
+    .contact-con a{
+        color: black;
+    }
+
+    .contact-con i:hover{
+        top: 3px;
+    }
+
+    footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 20px;
+    }
+    footer p{
+        margin: 0;
+        padding: 0;
+    }
